@@ -1,0 +1,421 @@
+body, html {
+  //font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-xs-right {
+  input {
+    text-align: right;
+  }
+}
+
+.center-align-content {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-align-content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.relative {
+  position: relative;
+}
+
+.input-group--disabled {
+  .icon {
+    display: none;
+  }
+}
+
+.radio-group {
+  padding: 0;
+}
+
+// Toolbars
+.toolbar {
+  .toolbar__items {
+    .dialog__container {
+      .dialog__activator {
+        height: 100%;
+        
+        .btn:not(.btn--depressed) {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+// Trial Balance
+#trial_balance {
+  .list__tile {
+    font-size: 12px;
+    height: 34px;
+  }
+}
+
+// DIALOGS
+.dialog__container {
+  &.fluid {
+    width: 100%;
+  }
+}
+
+// Tables
+
+.dense-table {
+
+  .datatable {
+    border-collapse: initial;
+    border-spacing: 2px;
+
+    thead {
+      tr {
+        height: 32px;
+      }
+
+      th {
+        text-align: left !important;
+        padding: 0 6px !important;
+        background-color: #1976d2;
+        border-radius: 3px;
+        color: white;
+      }
+
+      .input-group--text-field {
+        label {
+          top: 0;
+        }
+      }
+    }
+
+    tbody {
+      td {
+        font-weight: 300;
+        font-size: 16px;
+        padding: 0 4px !important;
+        height: auto;
+        border: 2px solid #ddd;
+        border-radius: 3px;
+      }
+    }
+
+    tfoot {
+      tr {
+        td {
+          padding: 0 !important;
+        }
+      }
+    }
+
+    .input-group {
+      padding: 0;
+
+      &.input-group--hide-details {
+        .input-group__details {
+          display: none;
+        }
+      }
+    }
+
+    .el-autocomplete.inline-input {
+      width: 100%;
+
+      .el-input__inner {
+        border: none;
+        background: none;
+        height: 30px;
+        color: rgba(0,0,0,.87);
+        font-size: 16px;
+      }
+    }
+  }
+
+  .table-input .input-group--hide-details .input-group__details {
+    display: none;
+  }
+  .datatable__actions .datatable__actions__select {
+    margin-right: 24px;
+  }
+  .input-group--hide-details .input-group__details {
+    display: none;
+  }
+
+}
+
+
+.adjustment-reason {
+  textarea {
+    padding: 5px !important;
+    border-color: #ddd !important;
+    font-weight: 300;
+  }
+}
+
+// vuetify form tables
+.v-form-table {
+
+  &.fixed-layout {
+    .table {
+      table-layout: fixed;
+
+      thead {
+        .datatable__progress {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .table {
+
+    td {
+      &.table__actions {
+        text-align: center;
+        .btn {
+          margin: 0;
+        }
+      }
+    }
+
+    thead {
+      tr {
+        &:first-child {
+          height: 40px;
+          border-bottom: 2px solid rgba(0,0,0,.2);
+        }
+
+        th {
+          padding: 0 5px;
+        }
+
+        &.t-headers__primary {
+          th {
+            text-align: left !important;
+            padding: 0 6px !important;
+            background-color: #1976d2;
+            border-radius: 3px;
+            color: white;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr:not(:last-child) {
+        border: none;
+      }
+      td {
+        padding: 0 5px !important;
+        height: 32px;
+        .input-group {
+          padding: 0;
+          font-size: inherit;
+          font-weight: inherit;
+
+          .input-group__selections__comma, input {
+            font-size: inherit;
+          }
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        height: 40px;
+        border-top: none;
+        td {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+// Element UI
+
+// table
+.el-table {
+  td {
+    font-weight: 300;
+    padding: 0;
+    .cell {
+      line-height: 28px;
+      .btn {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .el-table__footer {
+    td {
+      padding: 12px 0;
+      font-weight: 400;
+    }
+  }
+
+  &.has-error {
+    .el-table__footer {
+      td.is-leaf {
+        color: #d50000;
+      }
+    }
+  }
+
+  &.form-table {
+    td {
+      border: none;
+      
+      .input-group {
+        padding: 0;
+        border-bottom: 1px solid #e6ebf5;
+
+        &.input-group--hide-details {
+          .input-group__details {
+            display: none;
+          }
+        }
+      }
+
+      .input-group--select .input-group__selections__comma {
+        padding: 0;
+      }
+
+      .cell {
+        .btn {
+          height: auto;
+        }
+      }
+    }
+    .cell, th div {
+      padding-left: 5px;
+      padding-right: 5px; 
+    }
+
+    .el-table__footer-wrapper {
+      margin-top: 1px;
+    }
+  }
+}
+
+// autocomplete
+.el-autocomplete-suggestion.custom {
+  margin-top: 4px;
+
+  li {
+    line-height: normal;
+    padding: 7px;
+
+    .value {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .link {
+      font-size: 12px;
+      color: #b4b4b4;
+    }
+  }
+}
+
+// TABS
+.tabs {
+  &.default-tabs {
+    .tabs__bar {
+      .tabs__wrapper {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+// TRANSITIONS
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+// TRIAL BALANCE
+
+// REPORTS
+#reports {
+  position: relative;
+  min-height: 500px;
+
+  aside.navigation-drawer {
+    padding: 0;
+
+    .list--dense {
+      .list__tile:not(.list__tile--avatar) {
+        height: 30px;
+      }
+    }
+  }
+
+  > main.content {
+    padding: 0px 0px 0px 215px !important;
+  }
+}
+
+.table-reports {
+  .table {
+    thead {
+      tr:not(.datatable__progress) {
+        height: 40px !important;
+      }
+      th {
+        padding: 0 5px !important;
+        height: 40px;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 0 5px !important;
+        height: 30px;
+
+        &.table__actions {
+          text-align: center;
+          .btn {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        height: 40px;
+        td {
+          padding: 0 5px;
+          height: 40px;
+        }
+      }
+    }
+
+    .datatable__expand-row {
+      .datatable__expand-col {
+        transition: all ease-in-out .2s;
+        &.datatable__expand-col--expanded {
+          padding: 5px !important;
+        }
+      }
+      .table.theme--dark {
+        thead {
+          tr:hover {
+            background: inherit;
+          }
+        }
+      }
+    }
+  }
+}

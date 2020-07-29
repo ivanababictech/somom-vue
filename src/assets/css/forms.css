@@ -1,0 +1,129 @@
+.pl45 {
+    padding-left: 39px;
+}
+.ml45 {
+    margin-left: 40px;
+}
+
+.fs-text {
+    color: #008f7e;
+}
+
+.display-4 {
+    font-weight: 600 !important;
+    font-size: 130px !important;
+}
+
+.display-1 {
+    font-weight: 600 !important;
+    line-height: 1 !important;
+}
+
+.display-5 {
+    font-weight: 900 !important;
+    font-style: italic;
+}
+
+.total_layout {
+    background-color: #e3efe8;
+}
+
+.text-xs-left {
+    padding-left: 10px;
+}
+
+.total_layout img {
+    width: 100%;
+    height: 100%;
+}
+
+.print-pdf {
+    position: absolute;
+    bottom: 0;
+}
+
+.fs-form .border-top {
+    border-top: 1px solid #009688;
+}
+
+.fs-form .border-bottom {
+    border-bottom: 1px solid #009688;
+}
+
+.fs-form .border-right {
+    border-right: 1px solid #009688;
+}
+
+.fs-form .border-left {
+    border-left: 1px solid #009688;
+}
+
+.w1{
+    width: 6.6666666% !important;
+}
+.w2{
+    width: 13.33333% !important;
+}
+.w3{
+    width: 20% !important;
+}
+.w4{
+    width: 26.66666% !important;
+}
+.w5{
+    width: 33.33333% !important;
+}
+.w6{
+    width: 40% !important;
+}
+.w7{
+    width: 46.66666% !important;
+}
+.w8{
+    width: 53.33333% !important;
+}
+.w9{
+    width: 60% !important;
+}
+.w10{
+    width: 66.66666% !important;
+}
+.mini-input{
+    height: 32px !important;
+}
+.mini-input .v-input__control{
+    min-height: 32px !important;
+}
+.mini-input .v-input__slot{
+    padding: 0 !important;
+}
+.primary-border-all .v-input__control{
+    border: 1px solid #008f7e;
+}
+.primary-border .v-input__control{
+    border-right: 1px solid #008f7e;
+}
+.primary-border-top .v-input__control{
+    border-top: 1px solid #008f7e;
+}
+.primary-border-bottom .v-input__control{
+    border-bottom: 1px solid #008f7e;
+}
+.primary-border-left .v-input__control{
+    border-left: 1px solid #008f7e;
+}
+.mini-input input[type=number]::-webkit-inner-spin-button,
+.mini-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.mini-input input[type=number]{
+    text-align: center;
+}
+.mini-input input[type=text]{
+    padding-left: 4px;
+}
+
+.fs-dialog .v-dialog__activator{
+    height: 100%;
+}
